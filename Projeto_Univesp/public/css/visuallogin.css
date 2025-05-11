@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/*
+#232427
+#7b95c5
+#002e72
+#3178c9
+#454fda
+#aa6517
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0:#c4d2ec;
+    --cor1:#7b95c5;
+    --cor2:#3178c9;
+    --cor3:#002e72;
+    --cor4:#1e27a5;
+    --cor5:#232427;
+    --cor6:#aa6517;
+
+    --fonte-padrao: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0px;/*Margem*/
+    padding: 0px;/*prenchimento*/
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {/* organizar o header e componentes*/
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 66vh; /*altura boa*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: var(--fonte-padrao);
+    color: var(--cor3);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 15px 12px 45px;
+    border: 1px solid var(--cor1);
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    background-color: #f3f6fc;
+    color: var(--cor3);
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: var(--cor2);
+    background-color: #e6eefc;
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: var(--cor2);
+    pointer-events: none;
+}
+
+button {
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor3);
+}
+
+.register-link {
+    text-align: center;
+    margin: 15px;
+}
+
+.register-link a {
+    color: var(--cor2);
+    text-align: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    color: var(--cor1);
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 0 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}

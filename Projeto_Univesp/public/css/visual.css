@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/*
+#232427
+#7b95c5
+#002e72
+#3178c9
+#454fda
+#aa6517
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0:#c4d2ec;
+    --cor1:#7b95c5;
+    --cor2:#3178c9;
+    --cor3:#002e72;
+    --cor4:#1e27a5;
+    --cor5:#232427;
+    --cor6:#aa6517;
+
+    --fonte-padrao:"Work Sans", sans-serif;
+}
+
+* {
+    margin: 0px;/*Margem*/
+    padding: 0px;/*prenchimento*/
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {/* organizar o header e componentes*/
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.315);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+#logoutButton {
+    background-color: var(--cor5);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#logoutButton:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    transform: scale(1.05); /* Leve efeito de zoom */
+}
+
+main {
+    max-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor4);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    margin: 15px 0px;/*lembrar  fazer esse controle seja me margem ou sombra esses são os posicionamentos cima, direita, baixo e esquerda*/
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#modulos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#modulos button {
+    background-color: var(--cor3);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+}
+
+#modulos button:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*Bloqueado para teste no momento */
+#btn-intermediario, #btn-avancado {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}

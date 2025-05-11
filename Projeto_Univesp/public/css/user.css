@@ -1,0 +1,151 @@
+:root {
+  --cor0:#c4d2ec;
+  --cor1:#7b95c5;
+  --cor2:#3178c9;
+  --cor3:#002e72;
+  --cor4:#1e27a5;
+  --cor5:#232427;
+  --cor6:#9ba5b6;
+
+  --fonte-padrao:"Work Sans", sans-serif;
+}
+
+.info-aluno {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
+}
+
+.info-linha {
+  margin-bottom: 15px;
+}
+
+.info-linha label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.info-linha input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.botoes-edicao {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.botoes-edicao button {
+  padding: 8px 16px;
+  background-color: var(--cor3);
+  color:  white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botoes-edicao button:hover {
+  background-color: var(--cor5);
+}
+
+.senha-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.senha-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.senha-container input:focus {
+  outline: none;
+}
+
+.senha-container button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.senha-container button:hover {
+  transform: scale(1.2);
+}
+
+/* Progresso */
+.progresso-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#barra-progresso {
+  width: 100%;
+  height: 20px;
+  appearance: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#barra-progresso::-webkit-progress-bar {
+  background-color: #8da3b1;
+  border-radius: 10px;
+}
+
+#barra-progresso::-webkit-progress-value {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+/* Notificado */
+.notificacao-sucesso {
+  background-color: #e0ffe0;
+  border: 1px solid #8bc34a;
+  color: #2e7d32;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.notificacao-sucesso button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #2e7d32;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.olho-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.olho-btn:hover {
+  transform: scale(1.2);
+}

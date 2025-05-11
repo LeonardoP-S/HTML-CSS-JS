@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Educação</title>
+    <link rel="stylesheet" href="/public/css/visual.css">
+</head>
+<body>
+    <header>
+        <h1>Site de aprendizagem virtual</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ensino.html">Area de Ensino</a>
+        <a href="user.html">Area de Aluno</a>
+        <button id="logoutButton">Sair</button>
+    </nav>
+    <main>
+        <section><!--Sessão de modulos-->
+            <h2>Módulos de Ensino</h2>
+            <p>Aqui é área onde os módulos ficam para serem acessados, existem ao todo 3 módulos disponiveis com aulas de ensino de como funciona e ultilizar o computador, no momento 2 deles estão bloqueados mas a cada conclusão eles serão desbloqueados</p>
+            <h2>Inicie sua Jornada</h2>
+            <p>Conclua os módulos e ganhe conhecimento em informatica comece com o módulo básico e avance boa sorte.</p>
+        </section>
+
+        <section id="modulos">
+            <button onclick="carregarModulo('basico')" id="btn-basico">Módulo Básico</button>
+            <button onclick="carregarModulo('intermediario')" id="btn-intermediario">Módulo Intermediário</button>
+            <button onclick="carregarModulo('avancado')" id="btn-avancado" disabled>Módulo Avançado</button>
+        </section>
+        
+        <section id="modulo-container">
+            <p>Selecione um módulo para começar.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site projetoIntegrador @ 2025 <a href="IDPAGE.html">Quem Somos?</a></p>
+    </footer>
+    
+    <script src="/public/JavaScript/ensino.js"></script>
+    <script src="/public/JavaScript/modulosjava/modulo.js"></script>
+    <script src="/public/JavaScript/geral.js"></script>
+    <script src="/public/JavaScript/quizB.js"></script>
+</body>
+</html>

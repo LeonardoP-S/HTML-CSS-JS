@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Educação</title>
+    <link rel="stylesheet" href="/public/css/visual.css">
+    <link rel="stylesheet" href="/public/css/ativi.css">
+</head>
+<body>
+    <h1>Quiz do Módulo Básico</h1>
+
+    <div class="container-quiz">
+        <div class="pergunta">
+            <p><strong>1. O que é um computador?</strong></p>
+            <input type="radio" name="q1" value="a" placeholder="q1a">(A) Uma fruta<br>
+            <input type="radio" name="q1" value="b" placeholder="q1b">(B)Um dispotivo eletrônico<br>
+            <input type="radio" name="q1" value="c" placeholder="q1c">(C) Um brinquedo<br>
+            <input type="radio" name="q1" value="d" placeholder="q1d">(D)Um animal<br>
+        </div>
+        <div class="pergunta">
+            <p><strong>2. Para que computadores e outros dispostivos eletrônicos funcionem existem componentes que os fazem funcionar de maneira interna ou externa, qual é o nome da dado a este componente?</strong></p>
+            <input type="radio" name="q2" value="a" placeholder="q2a">(A) São tipos de chave-inglesa.<br>
+            <input type="radio" name="q2" value="b" placeholder="q2b">(B) Tipos de talheres.<br>
+            <input type="radio" name="q2" value="c" placeholder="q2c">(C) Software externos<br>
+            <input type="radio" name="q2" value="d" placeholder="q2d">(D) Hardware<br>
+        </div>
+        
+        <div class="pergunta">
+            <p><strong>3. Qual é a função principal da CPU em um computador?</strong></p>
+            <label><input type="radio" name="q3" value="a">(A) Armazenar arquivos</label><br>
+            <label><input type="radio" name="q3" value="b">(B) Reproduzir vídeos</label><br>
+            <label><input type="radio" name="q3" value="c">(C) Executar instruções e processar dados</label><br>
+            <label><input type="radio" name="q3" value="d">(D) Controlar a placa-mãe</label><br>
+        </div>
+        <div class="pergunta">
+            <p><strong>4. A memória RAM tem qual função no computador?</strong></p>
+            <label><input type="radio" name="q4" value="a">(A) Armazenar dados permanentemente</label><br>
+            <label><input type="radio" name="q4" value="b">(B) Aumentar a velocidade do mouse</label><br>
+            <label><input type="radio" name="q4" value="c">(C) Guardar informações temporárias usadas em tempo real</label><br>
+            <label><input type="radio" name="q4" value="d">(D) Alimentar a placa de vídeo</label><br>
+        </div>
+        <div class="pergunta"> 
+            <p><strong>5. Qual das opções abaixo representa um exemplo de hardware externo?
+            </strong></p>
+            <label><input type="radio" name="q5" value="a">(A) Processador</label><br>
+            <label><input type="radio" name="q5" value="b">(B) Memória RAM</label><br>
+            <label><input type="radio" name="q5" value="c">(C) Teclado</label><br>
+            <label><input type="radio" name="q5" value="d">(D) Placa-mãe</label><br>
+        </div>
+        <div class="pergunta">
+            <p><strong>6. O que é a placa-mãe em um computador?</strong></p>
+            <label><input type="radio" name="q6" value="a">(A) Um programa que ajuda na navegação</label><br>
+            <label><input type="radio" name="q6" value="b">(B) A memória principal do sistema</label><br>
+            <label><input type="radio" name="q6" value="c">(C) Um periférico de entrada</label><br>
+            <label><input type="radio" name="q6" value="d">(D) Uma placa central que conecta todos os componentes do computador</label><br>
+        </div>
+        <div class="pergunta">
+            <p><strong>7. Segundo os vídeos e textos, qual é a principal diferença entre hardware e software?</strong></p>
+            <label><input type="radio" name="q7" value="a">(A) Hardware é visível e software não</label><br>
+            <label><input type="radio" name="q7" value="b">(B) Hardware é usado apenas em celulares</label><br>
+            <label><input type="radio" name="q7" value="c">(C) Software é uma peça de metal do computador</label><br>
+            <label><input type="radio" name="q7" value="d">(D) Ambos são visíveis e físicos</label><br>
+        </div>
+        <div class="pergunta">
+            <p><strong>8. Qual componente é responsável por armazenar dados de forma permanente, mesmo com o computador desligado?</strong></p>
+            <label><input type="radio" name="q8" value="a">(A) Memória RAM</label><br>
+            <label><input type="radio" name="q8" value="b">(B) Armazenamento (HD, SSD)</label><br>
+            <label><input type="radio" name="q8" value="c">(C) CPU</label><br>
+            <label><input type="radio" name="q8" value="d">(D) Placa de vídeo</label><br>
+        </div>
+        <button type="button" onclick="sairDoQuiz()">Finalizar quiz</button>
+    </div>
+    <script src="/public/JavaScript/quizB.js"></script>
+</body>
+</html>

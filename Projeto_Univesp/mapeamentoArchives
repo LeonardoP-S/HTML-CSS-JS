@@ -1,0 +1,49 @@
+/projeto
+├──config
+│   │── .env
+│   │── config.json
+│   │── database.js
+│   │── package.js
+├── img
+│── /inicalpg
+│   ├── cadastro.html
+│   ├── IDPG1.html
+│   ├── login.html
+│── migrations
+│   │── 20250416130437-create-user.js
+├──/models
+│   │── index.js
+│   ├── Progresso.js
+│   │── user.js
+│──/node_modules
+│── /páginas
+│   ├── /modulos
+│   │   │── /quizes
+│   │   │   │── quizA.html
+│   │   │   │── quizB.html
+│   │   │   │── quizI.html
+│   │   │── avancado.html
+│   │   │── basico.html
+│   │   │── intermediario.html
+│   ├── conf.html
+│   ├── ensino.html
+│   ├── IDPAGE.html
+│   ├── index.html
+│   ├── user.html
+│── /public
+│   │──/css
+│   │──/JavaScript
+│   │   │──/modulosjava
+│   │   │── notprogresso.js
+│   │── cadastro.js
+│   │── ensino.js
+│   │── geral.js
+│   │── login.js
+│   │── quiz.js
+│   │── user.js
+│──/routes
+│   │── ensinocontroller.js
+│──/seeders
+│── package-lock.json
+│── package.json
+│── server.js
